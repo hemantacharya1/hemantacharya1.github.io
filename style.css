@@ -92,3 +92,108 @@ section{
 .btn:hover{
     background: var(--hover);
 }
+
+/* ====================About Section============================ */
+
+.heading{
+    text-align: center;
+}
+.heading h2{
+    font-size: 30px;
+}
+.heading span{
+    font-size: var(--p-font);
+    color: rgb(2,166,70);
+}
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.about-img img{
+    width: 80%;
+    border-radius: 0.5rem;
+}
+.about-text p{
+    font-size: var(--p-font);
+    font-weight: 400;
+    text-align: justify;
+}
+.information{
+    margin: 1rem 0 1.4rem;
+}
+.information info-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.4rem;
+}
+.information .info-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.4rem;
+}
+.information .info-box .bx{
+    font-size: 22px;
+}
+.information .info-box span{
+     font-weight: 400;
+     margin-left: 1rem;
+}
+
+/* =============================Skills================================= */
+
+.skills-container{
+    display: grid;
+    grid-template-columns: repeat(2,  1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+.skills-img img{
+    width: 80%;
+    padding-left: 4rem;
+    object-position: center;
+}
+.bars-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+.bars-box h3,
+.bars-box span{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.light-bar{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5rem;
+    background: hsla(260, 100%, 44%, 0.4);
+    border-radius: 0.5rem;
+}
+.parcent-bar{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.5rem;
+    background-color: var(--main-color);
+    border-radius: 0.5rem;
+}
+.html-bar{
+    width: 94%;
+}
+.css-bar{
+    width: 84%;
+}
+.js-bar{
+    width: 74%;
+}
+.java-bar{
+    width: 80%;
+}
