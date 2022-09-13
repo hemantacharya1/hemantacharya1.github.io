@@ -10,30 +10,63 @@
     <!-- css file -->
     <link rel="stylesheet" href="style.css">
     <!-- icon CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.2/css/boxicons.min.css">
 </head>
 <body>
-        <!-- Navigation bar -->
+        <!--============ Navigation bar ===========================-->
 
-                <!-- Home section -->
+        <header>
+            <!-- logo -->
+            <a href="#" class="logo"> Hemant Acharya</a>
+            <!-- button for responsive device -->
+            <div class="bx bx-menu" id="menu-icon"></div>
+            
+            <!-- menu items -->
+                <ul class="navbar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- dark mode button -->
+                    <div class="bx bx-moon" id="darkmode"></div>
+                </ul>
+        </header>
+
+                <!--============== Home section=================== -->
             <section class="home">
                 <div class="social">
-                    <a href=""> <i class="bx bxl-github"></i></a>
-                    <a href=""> <i class="bx bxl-dribbble"></i></a>
-                    <a href=""> <i class="bx bxl-behance"></i></a>
+                    <a href="https://github.com/hemantacharya1" target="_blank"> <i class="bx bxl-github"></i></a>
+                    <a href="https://www.linkedin.com/in/hemant-acharya-847224234/" target="_blank"> <i class="bx bxl-linkedin"></i></a>
                 </div>
                 <!-- home image -->
                 <div class="home-img">
-                    <img src="./assets/hemant_pic.jpg" alt="">
+                    <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+
+                                <image xlink:href="/hemantacharya1.github.io/assets/hemant_pic.jpg" x='0' y='-8' class="home__blob-img" />
+                            </g>
+                        </svg>
                 </div> 
                 <!-- home content -->
                 <div class="home-text">
                     <span>Hello I'm</span>
-                    <h1>Hemant Acharya</h1>
+                    <h1>Hemant</h1>
                     <h2>Backend Developer</h2>
                     <p>Lorem ipsum dolor sit.;hjgkl;ajg;jkl;ajsdgjkl;sdjgl;jasdkl;gjkdjsfkl;jkl;ajsdgjkl;adgj</p>
                     <!-- contact button -->
-                    <a href="" class="btn">Contact Me</a>
+                    <a href="#contact" class="btn">Contact Me</a>
                 </div>
             </section>
             
@@ -74,58 +107,95 @@
                                 </div>
                             </div>
                             <!-- btn -->
-                            <a href="" class="btn">Download Cv</a>
+                            <a href="https://drive.google.com/file/d/1zNGZl4CY6alQ-Tytf-QSaF1jyAP6O3Ve/view?usp=sharing" target="_blank" class="btn">Download Cv</a>
                         </div>
                     </div>
         </section>
 
         <!-- ======================= Skills Section====================== -->
+    
         <section class="skills" id="skills">
             <div class="heading">
-                <h2>skills</h2>
-                <span>My skills</span>
+                <h2>Skills</h2>
+                <span>My Skills</span>
             </div>
 
-            <!-- skills content -->
-            <div class="skills-container">
-                <div class="bars">
-                    <!-- box1 -->
-                    <div class="bars-box"> 
-                        <h3>HTML</h3>
-                        <span>94%</span>
-                        <div class="light-bar"></div>
-                        <div class="parcent-bar html-bar"></div>
-                    </div>
-                    <!-- box2 -->
-                    <div class="bars-box"> 
-                        <h3>CSS</h3>
-                        <span>84%</span>
-                        <div class="light-bar"></div>
-                        <div class="parcent-bar css-bar"></div>
-                    </div>
-                    <!-- box1 -->
-                    <div class="bars-box"> 
-                        <h3>javascript</h3>
-                        <span>74%</span>
-                        <div class="light-bar"></div>
-                        <div class="parcent-bar js-bar"></div>
-                    </div>
-                    <!-- box1 -->
-                    <div class="bars-box"> 
-                        <h3>Java</h3>
-                        <span>80%</span>
-                        <div class="light-bar"></div>
-                        <div class="parcent-bar java-bar"></div>
-                    </div>
+            <div class="skills-content">
+                <!-- box1 -->
+                <div class="skills-box">
+                    <i class="fa-brands fa-java"></i>
+                    <h3>Java</h3>
+                    <a href="#">learn more</a>
                 </div>
-                <!-- image -->
-                <div class="skills-img">
-                    <img src="./assets/dreamstime_m_126792558.jpg" alt="">
+                <!-- box2 -->
+                <div class="skills-box">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>Java-Script</h3>
+                    <a href="#">learn more</a>
+                </div>
+                <!-- box3 -->
+                <div class="skills-box">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML</h3>
+                    <a href="#">learn more</a>
+                </div>
+                <!-- box4 -->
+                <div class="skills-box">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                    <a href="#">learn more</a>
+                </div>
+                <!-- box5 -->
+                <div class="skills-box">
+                    <i class="fa-brands fa-github"></i>
+                    <h3>GitHub</h3>
+                    <a href="#">learn more</a>
                 </div>
             </div>
         </section>
-        
-            
+
+        <!-- ====================== Project =============== -->
+        <!-- <section class="portfolio" id="portfolio">
+            <div class="heading">
+                <h2>portfolio</h2>
+                <span>My Projects</span>
+            </div>
+
+            <div class="portfolio-content">
+
+            </div>
+        </section> -->
+
+
+        <!-- =========================contact form ======================== -->
+
+        <section class="contact" id="contact">
+            <div class="heading">
+                <h2>Contact</h2>
+                <span>Contact Deatils</span>
+            </div>
+
+            <!-- form -->
+
+            <div class="contact-form">
+                <form action="https://formspree.io/f/xpznqgvl" method="post">
+                    <input type="text" placeholder="Your Name" name="Name">
+                    <input type="email" placeholder="Your Email" name="Email">
+                    <textarea name="Message" id="" cols="30" rows="10" placeholder="Write Your Massage Here...." ></textarea>
+                    <input type="submit" value="Send" class="contact-button">
+                </form>
+            </div>
+        </section>
+
+        <!-- ======================footer section============================ -->
+         <div class="footer">
+            <h2>Mystry Code</h2>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/hemant-acharya-847224234/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/hemantacharya1" target="_blank"><i class="bx bxl-github"></i></a>
+                <a href="https://www.instagram.com/hemant__acharya/?hl=en" target="_blank"><i class="bx bxl-instagram"></i></a>
+            </div>
+         </div>
 
     <!-- js file -->
     <script src="./script.js"></script>    
