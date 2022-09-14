@@ -14,7 +14,7 @@
 
 :root{
     --main-color: #033a80;
-    --bg-color:rgb(242, 242, 242);
+    --bg-color:#fff;
     --text-color: #0f02c7;
     --hover:hsl(260, 100%, 51%);
 
@@ -182,11 +182,6 @@ header{
 .information{
     margin: 1rem 0 1.4rem;
 }
-.information info-box{
-    display: flex;
-    align-items: center;
-    margin-bottom: 1.4rem;
-}
 .information .info-box{
     display: flex;
     align-items: center;
@@ -249,7 +244,46 @@ header{
 .skills-box:hover a{
     color: #8b8a8f;
 }
-
+/* =============================Project======================= */
+.project-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+/* .project-box{
+    box-shadow: -3px -3px  7px #ffffff73,
+                2px 2px 5px rgba(94, 104 , 121, 0.288);
+    padding: 0.5rem;
+} */
+.project-box img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.project-data p{
+    font-size: var(--p-font);
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom:0.5rem ;
+    color: #8b8a8f;
+}
+.project-data{
+    margin: 1rem 0 1.4rem;
+}
+.project-btn{
+    display: flex;
+    gap: 2rem;
+}
+.project-btn a{
+    display:inline-block;
+    background:var(--main-color);
+    color: #fff;
+    padding: 0.7rem 1.3rem;
+    border-radius:0.5rem ;
+}
+.project-btn a:hover{
+    background: var(--hover);
+}
 /* =========================== Contact========================= */
 .contact-form{
     display: grid;
