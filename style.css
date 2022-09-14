@@ -15,7 +15,7 @@
 :root{
     --main-color: #033a80;
     --bg-color:#fff;
-    --text-color: #0f02c7;
+    --text-color: #0f0c27;
     --hover:hsl(260, 100%, 51%);
 
     --big-font: 3.2rem;
@@ -251,11 +251,6 @@ header{
     gap: 1.5rem;
     margin-top: 2rem;
 }
-/* .project-box{
-    box-shadow: -3px -3px  7px #ffffff73,
-                2px 2px 5px rgba(94, 104 , 121, 0.288);
-    padding: 0.5rem;
-} */
 .project-box img{
     width: 100%;
     border-radius: 0.5rem;
@@ -434,6 +429,9 @@ textarea::placeholder {
     .about-img img{
         width: 40%;
     }
+    .project-content{
+        grid-template-columns: repeat(1,1fr);
+    }
     .contact-form form{
         width: 300px;
     }
@@ -463,8 +461,8 @@ textarea::placeholder {
     .information .info-box span{
         font-size: 1rem;
     }
-    .portfolio-content{
-        grid-template-columns: repeat(auto-fit,minmax(200px, auto));
+    .project-content{
+        grid-template-columns: repeat(1,1fr);
     }
     .contact-form form{
         width: 300px;
