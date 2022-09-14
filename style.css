@@ -107,7 +107,8 @@ header{
 .home{
     position: relative;
     width:100%;
-    min-height:  100vh;
+    /* min-height:  90vh; */
+    margin-top: 1.5rem;
     display: grid;
     grid-template-columns: 0.2fr 1fr 1fr;
     align-items: center;
@@ -117,7 +118,8 @@ header{
     order: 3;
 }
 .home-img img{
-    width: 100%;
+    width: 80%;
+    border-radius: 0.5rem;
 }
 .home-text span{
     font-size: var(--medium-font);
@@ -168,11 +170,6 @@ header{
     grid-template-columns: repeat(2,1fr);
     gap: 1rem;
     margin-top: 2rem;
-}
-.about-img img{
-    width: 80%;
-    border-radius: 0.5rem;
-
 }
 .about-text p{
     font-size: var(--p-font);
@@ -410,11 +407,13 @@ textarea::placeholder {
         grid-template-columns: 0.5fr 3fr;
     }
     .home-img{
+        display: flex;
+        justify-content: center;
         order: initial;
     }
-    .home__blob {
-        width: 270px;
-      }
+    .home-img img{
+        width: 60%;
+    }
     .home-text{
         grid-column: 1/3;
         padding-left: 1.4rem;
@@ -422,13 +421,7 @@ textarea::placeholder {
     .about-container{
         grid-template-columns: 1fr;
     }
-    .about-img{
-        display: flex;
-        justify-content: center;
-    }
-    .about-img img{
-        width: 40%;
-    }
+    
     .project-content{
         grid-template-columns: repeat(1,1fr);
     }
@@ -438,6 +431,15 @@ textarea::placeholder {
     .contact-button{
         margin-left: 25% ;
     }
+    .about-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-text p{
+        text-align: center;
+    }
 }
 
 @media (max-width:340px){
@@ -445,15 +447,16 @@ textarea::placeholder {
         --big-font:1.7rem;
         --medium-font:1.1rem;
     }
-
     .home-text span{
         font-size: 1rem;
     }
-
-    .home__blob {
-        width: 180px;
-      }
-
+    .home-img{
+        display: flex;
+        justify-content: center;
+    }
+    .home-img img{
+        width: 90%;
+    }
     .home-text h2{
         font-size: 0.9rem;
         font-weight: 500;
@@ -461,6 +464,7 @@ textarea::placeholder {
     .information .info-box span{
         font-size: 1rem;
     }
+    
     .project-content{
         grid-template-columns: repeat(1,1fr);
     }
