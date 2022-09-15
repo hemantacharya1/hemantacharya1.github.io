@@ -101,9 +101,6 @@ header{
 }
 
 /* home section */
-.home__blob-img {
-  width: 200px;
-}
 .home{
     position: relative;
     width:100%;
@@ -153,6 +150,9 @@ header{
 }
 .btn{
     display:inline-block;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
     background:var(--main-color);
     color: #fff;
     padding: 0.7rem 1.3rem;
@@ -160,6 +160,10 @@ header{
 }
 .btn:hover{
     background: var(--hover);
+}
+.about-btn{
+    width: fit-content;
+    margin: auto;
 }
 
 /* ====================About Section============================ */
@@ -171,18 +175,39 @@ header{
     gap: 1rem;
     margin-top: 2rem;
 }
+.about-text{
+    display: grid;
+    gap: 1rem;
+
+}
 .about-text p{
     font-size: var(--p-font);
     font-weight: 400;
-    text-align: justify;
+    text-align: center;
 }
+.info-title{
+    font-size: 30px;
+    font-weight: 600;
+    color: hsl(var(--hue-color), 8%, 15%);
+}
+.about-num{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
 .information{
-    margin: 1rem 0 1.4rem;
+    width: fit-content;
+    margin: auto;
+    /* margin: 1rem 0 1.4rem; */
 }
 .information .info-box{
     display: flex;
     align-items: center;
     margin-bottom: 1.4rem;
+}
+.info-box a{
+    color: var(--p-font);
 }
 .information .info-box .bx{
     font-size: 22px;
@@ -196,7 +221,7 @@ header{
 
 .skills-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,auto));
+    grid-template-columns: repeat(auto-fit, minmax(210px,auto));
     justify-content: center;
     gap: 1rem;
     margin-top: 2rem;
@@ -327,6 +352,7 @@ textarea::placeholder {
     place-items: center;
     padding: 20px;
     background: #ebebeb;
+    width: 100%;
     color: #000;
 }
 .footer h2{
@@ -439,6 +465,11 @@ textarea::placeholder {
     }
     .about-text p{
         text-align: center;
+    }
+    .about-num{
+        
+        display: flex;
+        gap: 2rem;
     }
 }
 
