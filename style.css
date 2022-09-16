@@ -199,6 +199,7 @@ header{
 .information{
     width: fit-content;
     margin: auto;
+    height: 100%;
     /* margin: 1rem 0 1.4rem; */
 }
 .information .info-box{
@@ -226,6 +227,17 @@ header{
     gap: 1rem;
     margin-top: 2rem;
 }
+#myskills{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(200px,auto));
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+#myskills .skills-box{
+    border: 1px solid;
+    width: 450px;
+}
 .skills-box{
     padding: 20px;
     width: 260px;
@@ -239,6 +251,11 @@ header{
 }
 
 .skills-box .fa-brands{
+    padding-top:2rem;
+    font-size: 54px;
+    color: var(--main-color);
+}
+.skills-box .fa-sharp{
     padding-top:2rem;
     font-size: 54px;
     color: var(--main-color);
@@ -261,6 +278,9 @@ header{
     color: #fff;
 }
 .skills-box:hover .fa-brands{
+    color: #22cf91;
+}
+.skills-box:hover .fa-sharp{
     color: #22cf91;
 }
 .skills-box:hover a{
@@ -471,9 +491,12 @@ textarea::placeholder {
         display: flex;
         gap: 2rem;
     }
+    #myskills .skills-box{
+        width: 300px;
+    }
 }
 
-@media (max-width:340px){
+@media (max-width:415px){
     :root{
         --big-font:1.7rem;
         --medium-font:1.1rem;
@@ -504,5 +527,17 @@ textarea::placeholder {
     }
     .contact-button{
         margin-left: 25%;
+    }
+    .skills-content{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .skills-box{
+        width: 150px;
+    }
+    #myskills .skills-box{
+        width: 150px;
+    }
+    #myskills{
+        grid-template-columns: repeat(2,1fr);
     }
 }
