@@ -321,6 +321,9 @@ header{
 .project-btn a:hover{
     background: var(--hover);
 }
+#github{
+    margin-bottom: 2rem;
+}
 /* =========================== Contact========================= */
 .contact-form{
     display: grid;
