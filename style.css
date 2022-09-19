@@ -324,6 +324,31 @@ header{
 #github{
     margin-bottom: 2rem;
 }
+
+
+/* statics */
+#statics{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(200px,auto));
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.circle{
+    border: 10px solid var(--main-color);
+    padding: 2rem;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    font-weight: var(--big-font);
+    font-size: 20px;
+    align-items: center;
+    border-radius:50%;
+}
+.circle:hover{
+border-color: #22cf91;
+color: #fff;
+}
 /* =========================== Contact========================= */
 .contact-form{
     display: grid;
@@ -497,6 +522,9 @@ textarea::placeholder {
     #myskills .skills-box{
         width: 300px;
     }
+    #statics .skills-box{
+        width: 220px;
+    }
 }
 
 @media (max-width:415px){
@@ -542,5 +570,11 @@ textarea::placeholder {
     }
     #myskills{
         grid-template-columns: repeat(2,1fr);
+    }
+    #statics{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #statics .skills-box{
+        width: 150px;
     }
 }
