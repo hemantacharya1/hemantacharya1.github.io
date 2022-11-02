@@ -30,6 +30,7 @@ body{
 
 .heading{
     text-align: center;
+    
 }
 .heading h2{
     font-size: 30px;
@@ -321,9 +322,10 @@ header{
 .project-btn a:hover{
     background: var(--hover);
 }
-#github{
+/* #github{
     margin-bottom: 2rem;
-}
+    border: 1px solid;
+} */
 
 
 /* statics */

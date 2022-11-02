@@ -6,8 +6,8 @@
 
 ## 🛠 Tech Stack
 
-- Boothstrap
-- Javascript
+- BootStrap
+- JavaScript
 - HTML
 - CSS
 
