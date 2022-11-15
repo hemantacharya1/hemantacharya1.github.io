@@ -354,6 +354,9 @@ color: #fff;
 /* =========================== Contact========================= */
 .contact-form{
     display: grid;
+    /* border: 1px solid; */
+    grid-template-columns: repeat(1,1fr);
+    gap: 30px;
     place-items: center;
     margin-top: 2rem;
 }
