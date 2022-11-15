@@ -237,7 +237,7 @@ header{
 }
 #myskills .skills-box{
     border: 1px solid;
-    width: 450px;
+    width:420px;
 }
 .skills-box{
     padding: 20px;
@@ -322,16 +322,16 @@ header{
 .project-btn a:hover{
     background: var(--hover);
 }
-/* #github{
+#github{
     margin-bottom: 2rem;
-    border: 1px solid;
-} */
+    margin-top: 2rem;
+}
 
 
 /* statics */
 #statics{
     display: grid;
-    grid-template-columns: repeat(3,minmax(200px,auto));
+    grid-template-columns: repeat(2,minmax(210px,auto));
     justify-content: center;
     gap: 1rem;
     margin-top: 2rem;
@@ -437,6 +437,9 @@ textarea::placeholder {
         --bg-font:2.7rem;
         --medium-font:1.4rem;
     }
+    #myskills .skills-box{
+        width: 360px;
+    }
 }
 
 @media (max-width: 768px){
@@ -526,6 +529,11 @@ textarea::placeholder {
     }
     #statics .skills-box{
         width: 220px;
+    }
+}
+@media(max-width:650px){
+    #myskills .skills-box{
+        width: 170px;
     }
 }
 
