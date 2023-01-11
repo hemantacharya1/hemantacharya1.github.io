@@ -173,7 +173,7 @@ header{
 .about-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 1rem;
+    gap: 3rem;
     margin-top: 2rem;
 }
 .about-text{
@@ -197,11 +197,16 @@ header{
     text-align: center;
 }
 
-.information{
+/* #image{
+    
+    border: 10px solid;
+    border-radius: 20px;
+    margin-top: 1rem;
+} */
+/* .information{
     width: fit-content;
     margin: auto;
     height: 100%;
-    /* margin: 1rem 0 1.4rem; */
 }
 .information .info-box{
     display: flex;
@@ -217,7 +222,7 @@ header{
 .information .info-box span{
      font-weight: 400;
      margin-left: 1rem;
-}
+} */
 
 /* ================================Skilss Section======================================= */
 
@@ -240,8 +245,8 @@ header{
     width:420px;
 }
 .skills-box{
-    padding: 20px;
-    width: 260px;
+    padding: 10px;
+    width: 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -257,6 +262,11 @@ header{
     color: var(--main-color);
 }
 .skills-box .fa-sharp{
+    padding-top:2rem;
+    font-size: 54px;
+    color: var(--main-color);
+}
+.skills-box .fa-solid{
     padding-top:2rem;
     font-size: 54px;
     color: var(--main-color);
@@ -282,6 +292,9 @@ header{
     color: #22cf91;
 }
 .skills-box:hover .fa-sharp{
+    color: #22cf91;
+}
+.skills-box:hover .fa-solid{
     color: #22cf91;
 }
 .skills-box:hover a{
@@ -327,30 +340,6 @@ header{
     margin-top: 2rem;
 }
 
-
-/* statics */
-#statics{
-    display: grid;
-    grid-template-columns: repeat(2,minmax(210px,auto));
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
-}
-.circle{
-    border: 10px solid var(--main-color);
-    padding: 2rem;
-    width: 150px;
-    height: 150px;
-    display: flex;
-    font-weight: var(--big-font);
-    font-size: 20px;
-    align-items: center;
-    border-radius:50%;
-}
-.circle:hover{
-border-color: #22cf91;
-color: #fff;
-}
 /* =========================== Contact========================= */
 .contact-form{
     display: grid;
@@ -530,9 +519,6 @@ textarea::placeholder {
     #myskills .skills-box{
         width: 300px;
     }
-    #statics .skills-box{
-        width: 220px;
-    }
 }
 @media(max-width:650px){
     #myskills .skills-box{
@@ -583,11 +569,5 @@ textarea::placeholder {
     }
     #myskills{
         grid-template-columns: repeat(2,1fr);
-    }
-    #statics{
-        grid-template-columns: repeat(2,1fr);
-    }
-    #statics .skills-box{
-        width: 150px;
     }
 }
