@@ -10,11 +10,13 @@
     text-decoration: none;
     scroll-padding-top: 2rem;
     font-family: "poppins", sans-serif;
+    
 }
 
 :root{
     --main-color: #033a80;
-    --bg-color:#fff;
+    --bg-color:
+    #fbfbfe;
     --text-color: #0f0c27;
     --hover:hsl(260, 100%, 51%);
 
@@ -116,7 +118,8 @@ header{
     order: 3;
 }
 .home-img img{
-    width: 80%;
+    width: 70%;
+    object-fit: contain;
     border-radius: 0.5rem;
 }
 .home-text span{
@@ -283,11 +286,14 @@ header{
 .project-content{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 1.5rem;
+    gap: 2rem;
     margin-top: 2rem;
 }
 .project-box img{
     width: 100%;
+    height: 250px;
+    object-fit: contain;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 0.5rem;
 }
 .project-data p{
