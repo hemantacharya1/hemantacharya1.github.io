@@ -179,7 +179,6 @@ header{
 .about-text{
     display: grid;
     gap: 1rem;
-
 }
 .about-text p{
     font-size: var(--p-font);
@@ -196,33 +195,13 @@ header{
     justify-content: space-around;
     text-align: center;
 }
-
-/* #image{
-    
-    border: 10px solid;
-    border-radius: 20px;
-    margin-top: 1rem;
-} */
-/* .information{
-    width: fit-content;
-    margin: auto;
-    height: 100%;
+#image img{
+   width: 100%;
+   height: 100%;
+   border-radius: 2rem;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   object-fit:cover;
 }
-.information .info-box{
-    display: flex;
-    align-items: center;
-    margin-bottom: 1.4rem;
-}
-.info-box a{
-    color: var(--p-font);
-}
-.information .info-box .bx{
-    font-size: 22px;
-}
-.information .info-box span{
-     font-weight: 400;
-     margin-left: 1rem;
-} */
 
 /* ================================Skilss Section======================================= */
 
@@ -343,16 +322,15 @@ header{
 /* =========================== Contact========================= */
 .contact-form{
     display: grid;
-    /* border: 1px solid; */
-    grid-template-columns: repeat(1,1fr);
-    gap: 30px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
     place-items: center;
     margin-top: 2rem;
 }
 .contact-form form{
     display: flex;
     flex-direction: column;
-    width: 650px;
+    width: 100%;
 }
 form input,
 textarea{
@@ -386,6 +364,26 @@ textarea::placeholder {
 }
 .contact-button:hover{
     background: var(--hover);
+}
+
+.information{
+    width: fit-content;
+    margin: auto;
+}
+.information .info-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.4rem;
+}
+.info-box a{
+    color: var(--p-font);
+}
+.information .info-box .bx{
+    font-size: 22px;
+}
+.information .info-box span{
+     font-weight: 400;
+     margin-left: 1rem;
 }
 
 /* =======================footer section========================== */
@@ -520,9 +518,12 @@ textarea::placeholder {
         width: 300px;
     }
 }
-@media(max-width:650px){
+@media(max-width:690px){
     #myskills .skills-box{
         width: 170px;
+    }
+    .contact-form{
+        grid-template-columns: repeat(1,1fr);
     }
 }
 
